@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">4</td><td class="num">0</td><td class="num">0</td><td class="num">130</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">demopackage.AdminUserTest</td><td><a href="#m0">browserIntialization</a></td><td rowspan="1">1755837377304</td><td rowspan="1">-1755837377304</td></tr><tr class="failedeven"><td><a href="#m1">browserQuit</a></td><td rowspan="1">1755837377307</td><td rowspan="1">1</td></tr><tr class="failedodd"><td rowspan="2">demopackage.Logintest</td><td><a href="#m2">browserIntialization</a></td><td rowspan="1">1755837377295</td><td rowspan="1">-1755837377295</td></tr><tr class="failedodd"><td><a href="#m3">browserQuit</a></td><td rowspan="1">1755837377299</td><td rowspan="1">2</td></tr><tr class="failedeven"><td rowspan="3">demopackage.ManagementNewsTest</td><td><a href="#m4">browserIntialization</a></td><td rowspan="1">1755837377235</td><td rowspan="1">-1755837377235</td></tr><tr class="failedeven"><td><a href="#m5">browserQuit</a></td><td rowspan="2">1755837377278</td><td rowspan="2">5</td></tr><tr class="failedeven"><td><a href="#m6">browserQuit</a></td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">demopackage.ManagementNewsTest</td><td><a href="#m7">browserIntialization</a></td><td rowspan="1">1755837377290</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">demopackage.AdminUserTest</td><td><a href="#m8">AdminUserInformation</a></td><td rowspan="1">1755837377305</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">demopackage.Logintest</td><td><a href="#m9">loginwithvalidCredential</a></td><td rowspan="1">1755837377297</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="2">demopackage.ManagementNewsTest</td><td><a href="#m10">manageNews</a></td><td rowspan="1">1755837377264</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m11">newsUpdate</a></td><td rowspan="1">1755837377292</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">demopackage.AdminUserTest#browserIntialization</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method browserIntialization but has not been marked @Optional or defined
+in C:\Users\reshm\eclipse-workspace\DemoProject1\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">demopackage.AdminUserTest#browserQuit</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=AdminUserInformation status=SKIP method=AdminUserTest.AdminUserInformation()[pri:0, instance:demopackage.AdminUserTest@6f53b8a] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at demopackage.Base.browserQuit(Base.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">demopackage.Logintest#browserIntialization</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method browserIntialization but has not been marked @Optional or defined
+in C:\Users\reshm\eclipse-workspace\DemoProject1\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">demopackage.Logintest#browserQuit</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=loginwithvalidCredential status=SKIP method=Logintest.loginwithvalidCredential()[pri:1, instance:demopackage.Logintest@4d1bf319] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at demopackage.Base.browserQuit(Base.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">demopackage.ManagementNewsTest#browserIntialization</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method browserIntialization but has not been marked @Optional or defined
+in C:\Users\reshm\eclipse-workspace\DemoProject1\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">demopackage.ManagementNewsTest#browserQuit</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=manageNews status=SKIP method=ManagementNewsTest.manageNews()[pri:0, instance:demopackage.ManagementNewsTest@5890e879] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at demopackage.Base.browserQuit(Base.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">demopackage.ManagementNewsTest#browserQuit</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=newsUpdate status=SKIP method=ManagementNewsTest.newsUpdate()[pri:0, instance:demopackage.ManagementNewsTest@5890e879] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at demopackage.Base.browserQuit(Base.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">demopackage.ManagementNewsTest#browserIntialization</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">demopackage.AdminUserTest#AdminUserInformation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method browserIntialization but has not been marked @Optional or defined
+in C:\Users\reshm\eclipse-workspace\DemoProject1\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">demopackage.Logintest#loginwithvalidCredential</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method browserIntialization but has not been marked @Optional or defined
+in C:\Users\reshm\eclipse-workspace\DemoProject1\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">demopackage.ManagementNewsTest#manageNews</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method browserIntialization but has not been marked @Optional or defined
+in C:\Users\reshm\eclipse-workspace\DemoProject1\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">demopackage.ManagementNewsTest#newsUpdate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method browserIntialization but has not been marked @Optional or defined
+in C:\Users\reshm\eclipse-workspace\DemoProject1\testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

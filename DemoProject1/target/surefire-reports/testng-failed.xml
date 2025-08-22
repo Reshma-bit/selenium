@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browse" value="chrome"/>
+  <listeners>
+    <listener class-name="generateReport.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="demopackage.ManagementNewsTest">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="browserIntialization"/>
+          <include name="manageNews"/>
+          <include name="newsUpdate"/>
+        </methods>
+      </class> <!-- demopackage.ManagementNewsTest -->
+      <class name="demopackage.AdminUserTest">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="AdminUserInformation"/>
+          <include name="browserIntialization"/>
+        </methods>
+      </class> <!-- demopackage.AdminUserTest -->
+      <class name="demopackage.Logintest">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="loginwithvalidCredential"/>
+          <include name="browserIntialization"/>
+        </methods>
+      </class> <!-- demopackage.Logintest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 7, Errors: 0, Skipped: 5, Time elapsed: 1.587 s <<< FAILURE! - in TestSuite
+demopackage.ManagementNewsTest.browserIntialization  Time elapsed: 0.873 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeMethod on method browserIntialization but has not been marked @Optional or defined
+in C:\Users\reshm\eclipse-workspace\DemoProject1\testng.xml
+
+demopackage.ManagementNewsTest.browserQuit[[TestResult name=manageNews status=SKIP method=ManagementNewsTest.manageNews()[pri:0, instance:demopackage.ManagementNewsTest@5890e879] output={null}]](0)  Time elapsed: 0.016 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
+
+demopackage.ManagementNewsTest.browserQuit[[TestResult name=newsUpdate status=SKIP method=ManagementNewsTest.newsUpdate()[pri:0, instance:demopackage.ManagementNewsTest@5890e879] output={null}]](0)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
+
+demopackage.Logintest.browserIntialization  Time elapsed: 0.005 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeMethod on method browserIntialization but has not been marked @Optional or defined
+in C:\Users\reshm\eclipse-workspace\DemoProject1\testng.xml
+
+demopackage.Logintest.browserQuit[[TestResult name=loginwithvalidCredential status=SKIP method=Logintest.loginwithvalidCredential()[pri:1, instance:demopackage.Logintest@4d1bf319] output={null}]](0)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
+
+demopackage.AdminUserTest.browserIntialization  Time elapsed: 0.008 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeMethod on method browserIntialization but has not been marked @Optional or defined
+in C:\Users\reshm\eclipse-workspace\DemoProject1\testng.xml
+
+demopackage.AdminUserTest.browserQuit[[TestResult name=AdminUserInformation status=SKIP method=AdminUserTest.AdminUserInformation()[pri:0, instance:demopackage.AdminUserTest@6f53b8a] output={null}]](0)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
+
