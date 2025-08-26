@@ -19,7 +19,7 @@ import utilites.WaitUtility;
 public class Base
 {
 	public WebDriver driver;
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	@Parameters("browser")
 
 	public void browserIntialization(String browser)throws Exception

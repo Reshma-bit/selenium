@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,7 +11,7 @@ public class Loginpage {
 	@FindBy(xpath="//button[@type='submit']")WebElement signin;
 	@FindBy(xpath="//p[text()='Dashboard']")WebElement dashboard;
 	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")WebElement alert;
-	@FindBy(xpath="//input[@id='login-button']")WebElement login;
+	
 	public WebDriver driver;
 	
 	public Loginpage(WebDriver driver) {

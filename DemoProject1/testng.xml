@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-<listeners>
-<listener class-name="generateReport.Listeners"></listener>
-</listeners>
-<parameter name="browse" value="chrome"></parameter>
   <test thread-count="5" name="Test">
+  <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="demopackage.ManagementNewsTest">
-      <methods>
-      <exclude name="AdminUserInformation"></exclude>
-      </methods>
-      </class>
       
-      <class name="demopackage.Logintest">
+     
+    <!--  <class name="demopackage.Logintest">
       <methods>
       <include name="loginwithvalidCredential"></include>
       </methods>
+      </class>-->
+      <class name="demopackage.ManagementNewsTest">
+      <methods>
+      <include name="manageNews"></include>
+      </methods>
       </class>
-      <class name="demopackage.AdminUserTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

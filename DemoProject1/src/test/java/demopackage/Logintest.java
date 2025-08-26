@@ -46,19 +46,21 @@ public class Logintest extends Base {
 		Loginpage loginpage=new Loginpage(driver);
 		loginpage.enterPassword(pass);
 		loginpage.enterUsername(user);
+		loginpage.clicksignInButton();
 		boolean isAlertMessageDisplayed=loginpage.isAlertDisplayed();
 		Assert.assertTrue(isAlertMessageDisplayed);
 
 		
 	}
 	@Test(groups= {"regression"})
-	public void loginUsernamaIncorrectPasswordCorrect()
+	public void loginUsernamaIncorrectPasswordInCorrect()
 	{
 		String user="llll";
 		String pass="ooo";
 		Loginpage loginpage=new Loginpage(driver);
 		loginpage.enterPassword(pass);
 		loginpage.enterUsername(user);
+		loginpage.clicksignInButton();
 		boolean isAlertMessageDisplayed=loginpage.isAlertDisplayed();
 		Assert.assertTrue(isAlertMessageDisplayed);
 

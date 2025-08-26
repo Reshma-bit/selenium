@@ -15,14 +15,16 @@ import utilites.ExcelUtility;
 public class ManagementNewsTest extends Base {
 	
 
-	@Test(groups= {"regression"})
+	@Test(groups= {"regression"},description="to add a news")
 	public void manageNews() throws IOException
 	{
 		/*String news="New news is added";
-		//String user="admin";
-		//String pass="admin";*/
-		String user=ExcelUtility.getStringData(1, 0, "loginpage");
-		String pass=ExcelUtility.getStringData(1, 1, "loginpage");
+		String user="admin";
+		String pass="admin";*/
+		String user=ExcelUtility.getStringData(1, 0, "login page");
+		String pass=ExcelUtility.getStringData(1, 1, "login page");
+		String news=ExcelUtility.getStringData(1, 0,"ManageNews");
+		
 	Loginpage loginpage=new Loginpage(driver);
 	loginpage.enterUsername(user);
 	loginpage.enterPassword(pass);
@@ -31,7 +33,7 @@ public class ManagementNewsTest extends Base {
 	managepage.clickMoreInfo();
 	managepage.clicknews();
 	
-	managepage.newstext(pass);
+	managepage.newsText(news);
 	managepage.clickSaveButton();
 	
 	boolean alertdisplayed=managepage.isAlertDisplayed();
@@ -44,8 +46,8 @@ public class ManagementNewsTest extends Base {
 		/*String news="This is the updated news";
 		String user="admin";
 		String pass="admin";*/
-		String user=ExcelUtility.getStringData(1, 0,"LoginPage");
-		String pass=ExcelUtility.getStringData(1, 1, "LoginPage");
+		String user=ExcelUtility.getStringData(1, 0,"login page");
+		String pass=ExcelUtility.getStringData(1, 1,"login page");
 		String news=ExcelUtility.getStringData(1, 1, "ManageNews");
 	Loginpage loginpage=new Loginpage(driver);
 	loginpage.enterUsername(user);

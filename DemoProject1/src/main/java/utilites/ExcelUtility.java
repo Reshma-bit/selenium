@@ -22,7 +22,7 @@ public class ExcelUtility
 	String filepath=Constant.TESTDATAFILE;
 		f=new FileInputStream(filepath);
 		wb=new XSSFWorkbook(f);
-		sh=wb.getSheet("sheet1");
+		sh=wb.getSheet(sheet);
 		XSSFRow r=sh.getRow(a);
 		XSSFCell c=r.getCell(b);
 		return c.getStringCellValue();
@@ -33,7 +33,7 @@ public class ExcelUtility
 		String filepath=Constant.TESTDATAFILE;
 		f=new FileInputStream(filepath);
 		wb=new XSSFWorkbook(f);
-		sh= wb.getSheet("sheet1");
+		sh= wb.getSheet(sheet);
 		XSSFRow r=sh.getRow(a);
 		XSSFCell c=r.getCell(b);
 		int x=(int)c.getNumericCellValue();
